@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   before_action :authorize
-
+  #check if user is logged in
   def authorize
    @headers = request.headers
     if @headers['Authorization'].present?
